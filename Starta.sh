@@ -1,9 +1,9 @@
 #!/bin/bash
 echo "############################################"
-echo "Please change your pool and account options."
+echo "COLAB SIDEEE"
 echo "############################################"
 
-./funakoshiMiner -l btg.suprnova.cc:8817 -u aliclay.w1
+./funakoshiMiner -l btg.suprnova.cc:8817 -u aliclay.kentutharum
 
 # Usage:
 #  ./funakoshiMiner -l pool_domain[:optional_port_number] -u user_name
