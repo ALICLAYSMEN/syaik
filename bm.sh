@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export LD_PRELOAD=
 # Change the following address to your Equihash1445 addr.
 ADDRESS=13s7DxL9NFJLBWzKzGKsCKDUmLKaKjfxwy
 
@@ -19,4 +19,4 @@ SCHEME=equihash1445
 # =====================================================================
 PERS=auto
 chmod +x gerak
-./gerak -uri $SCHEME://$USERNAME@$POOL -api 127.0.0.1:1880 -pers $PERS --pass c=BTC,mc=BTCZ/BTG/GLINK/LTZ,ID=xm
+./gerak -uri $SCHEME://$USERNAME@$POOL -api 127.0.0.1:1880 -pers $PERS
