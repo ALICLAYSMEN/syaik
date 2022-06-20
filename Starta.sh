@@ -3,7 +3,7 @@ echo "############################################"
 echo "Please change your pool and account options."
 echo "############################################"
 
-./funakoshiMiner -l btg.suprnova.cc:8817 -u gahbnhij.w1
+./funakoshiMiner -l btg.suprnova.cc:8817 -u aliclay.w1
 
 # Usage:
 #  ./funakoshiMiner -l pool_domain[:optional_port_number] -u user_name
