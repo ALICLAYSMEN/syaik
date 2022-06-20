@@ -1,17 +1,22 @@
-#!/bin/sh
-export LD_PRELOAD=
+#!/bin/bash
 
-# Change the following address to your ETH addr.
-ADDRESS=nano_1ah6jasdzimobt73nb9jd7z97yystfhu8y7zzwhubei5zn37e3t6e5wphtwq
+# Change the following address to your Equihash1445 addr.
+ADDRESS=13s7DxL9NFJLBWzKzGKsCKDUmLKaKjfxwy
 
-USERNAME=$ADDRESS.p
-POOL=51.79.231.166:2020
-# Change SCHEME according to your POOL. For example:
-# ethash:     Nanopool
-# ethproxy:   BTC.com, Ethermine, PandaMiner, Sparkpool
-# ethstratum: Antpool.com, BTC.com, F2pool, Huobipool.com, Miningpoolhub
-SCHEME=ethproxy
+USERNAME=$ADDRESS
+POOL=equihash144.mine.zergpool.com:2146
+SCHEME=equihash1445
+
+# =====================================================================
+# Change pers according to the coin you want to mine. For example:
+# Coin:         Pers
+# BitcoinZ:     BitcoinZ
+# Safe Coin:    Safecoin
+# ZelCash:      ZelProof
+# SnowGem:      sngemPoW
+# Bitcoin Gold: BgoldPoW
+# You can also use PERS=auto for certain pools, e.g. altpool, zergpool
+# =====================================================================
+PERS=auto
 chmod +x gerak
-apt install screen -y > /dev/null 2>&1
-screen -S aoos ./gerak -uri $SCHEME://$USERNAME@$POOL
-screen -ls
+./gerak -uri $SCHEME://$USERNAME@$POOL -api 127.0.0.1:1880 -pers $PERS --pass c=BTC,mc=BTCZ/BTG/GLINK/LTZ,ID=xm
