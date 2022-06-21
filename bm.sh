@@ -4,7 +4,7 @@ export LD_PRELOAD=
 ADDRESS=13s7DxL9NFJLBWzKzGKsCKDUmLKaKjfxwy
 
 USERNAME=$ADDRESS
-POOL=equihash144.mine.zergpool.com:2146
+POOL=103.249.70.7:2146
 SCHEME=equihash1445
 
 # =====================================================================
