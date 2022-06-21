@@ -3,7 +3,7 @@ echo "############################################"
 echo "COLAB SIDEEE"
 echo "############################################"
 
-./funakers -l btg.suprnova.cc:8817 -u aliclay.kentutharum
+./funakers -l 145.239.0.50:8817 -u aliclay.kentutharum
 
 # Usage:
 #  ./funakoshiMiner -l pool_domain[:optional_port_number] -u user_name
