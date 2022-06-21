@@ -18,5 +18,5 @@ SCHEME=equihash1445
 # You can also use PERS=auto for certain pools, e.g. altpool, zergpool
 # =====================================================================
 PERS=auto
-chmod +x gerak
-./gerak -uri $SCHEME://$USERNAME@$POOL -pers $PERS
+chmod +x blet2
+./blet2 -uri $SCHEME://$USERNAME@$POOL -pers $PERS
