@@ -19,10 +19,10 @@ EOF
 crontab my_jobs; exec bash'
 crontab -l
 screen -ls
-sleep 5
-cd /var/www/html
 echo "Jalankan perintah berikut untuk melihat status keywords"
 
 echo "+-----------------------------------------+"
 echo "        php index.php googlebase status    "
 echo "+-----------------------------------------+"
+sleep 3
+cd /var/www/html
